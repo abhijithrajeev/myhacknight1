@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image To Text Converter</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Lobster&display=swap"
+    rel="stylesheet">
+<style>
+    body {
+        background: url('hackbg2.jpg');
+        background-size: 1280px auto;
+    }
+
+    .container {
+        margin: 41px 13px;
+        padding: 75px;
+        border-radius: 28px;
+        width: 33%;
+    }
+
+    .upload {
+        display: inline-block;
+        padding: 7px 0px;
+        margin: 250px 448px;
+    }
+
+    .heading {
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        display: inline-block;
+        position: absolute;
+        font-size: 24px;
+        color: rgb(211, 27, 27);
+        margin: 130px 215px;
+        padding: 0px 102px;
+    }
+
+    input {
+        margin-top: 1rem;
+    }
+
+    input::file-selector-button {
+        font-weight: bold;
+        color: rgb(21, 138, 210);
+        padding: 0.5em;
+        border: thin solid grey;
+        border-radius: 3px;
+        text-shadow: burlywood;
+    }
+    input::file-selector-button:hover, input::file-selector-button:active{
+        text-decoration: underline;
+        color: rgb(241, 166, 38);
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Extract The Text Here!</h1>
+        </div>
+        <div class="upload">
+            <form>
+                <input type="file" onchange="" id="fileUpload" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
